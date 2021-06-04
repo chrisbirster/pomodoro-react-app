@@ -46,6 +46,31 @@ The test runner can run in interactive watch mode. See the section about [runnin
 yarn test
 ```
 
+## Deploy
+
+### Deploy with AWS CDK
+The deploy directory has instructions on deploying this application as a
+microservice using AWS ECS Fargate cluster. Found out more by navigating to the
+pomodoro-react-app/deploy/README.md 
+
+### Deploy with Docker
+The application has been containerized. Here is a quickstart to to build the
+repository image and run it using Docker. Then you can navigate to
+http://localhost:3000 to see the application.
+
+```
+cd pomodoro-react-app
+docker build -t pomodoro:dev .
+docker run --name pomo -p 3000:80 pomodoro:dev
+```
+
+You can also pull from DockerHub I pushed an image under [chrisdontmiss/pomodoro](https://hub.docker.com/r/chrisdontmiss/pomodoro).
+
+```
+docker run --name pomo -p 3000:80 chrisdontmiss/pomodoro
+```
+
+
 ## Contributing
 PRs accepted.
 

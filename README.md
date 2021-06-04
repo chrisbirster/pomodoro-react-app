@@ -78,5 +78,5 @@ PRs accepted.
 Does not track your start time or save your preferences, so timer stops if your computer sleeps and the settings need to be reentered when the page is refreshed.
 
 ## License
-[MIT © Aaron Stroud.](./LICENSE)
+[MIT](./LICENSE)
 
